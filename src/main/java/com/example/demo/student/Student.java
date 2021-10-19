@@ -2,7 +2,7 @@ package com.example.demo.student;
 
 import java.time.LocalDate;
 
-public class student {
+public class Student {
 
     private Long id;
     private String name;
@@ -10,17 +10,17 @@ public class student {
     private LocalDate dob;
     private Integer age;
 
-    public student() {
+    public Student() {
     }
 
-    public student(String name, String email, LocalDate dob, Integer age) {
+    public Student(String name, String email, LocalDate dob, Integer age) {
         this.name = name;
         this.email = email;
         this.dob = dob;
         this.age = age;
     }
 
-    public student(Long id, String name, String email, LocalDate dob, Integer age) {
+    public Student(Long id, String name, String email, LocalDate dob, Integer age) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -68,9 +68,9 @@ public class student {
         this.age = age;
     }
 
-
+    @Override
     public String toString() {
-        return "Student{" +
+        return "student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
@@ -78,5 +78,4 @@ public class student {
                 ", age=" + age +
                 '}';
     }
-
 }
